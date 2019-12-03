@@ -21,8 +21,8 @@ for (let i = 0; i <= data.length; i = i + 4) {
   if (operation === 99) break;
   const num1 = data[data[i + 1]];
   const num2 = data[data[i + 2]];
-  const position = data[data[i + 3]];
+  const position = data[i + 3];
   data[position] = calculate(operation, num1, num2);
 }
 
-console.log(data[1]);
+console.log(data[0]);
