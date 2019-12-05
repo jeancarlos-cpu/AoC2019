@@ -38,15 +38,19 @@ while (i < input.length) {
       break;
     case 5:
       if (num1 !== 0) i = num2;
+      else i += 3;
       break;
     case 6:
       if (num1 === 0) i = num2;
+      else i += 3;
       break;
     case 7:
       input[position] = num1 < num2 ? 1 : 0;
+      i += 4;
       break;
     case 8:
       input[position] = num1 === num2 ? 1 : 0;
+      i += 4;
       break;
     case 99:
       process.exit();
