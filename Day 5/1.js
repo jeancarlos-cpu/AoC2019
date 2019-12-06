@@ -22,6 +22,8 @@ while (i < input.length) {
   const B = Math.floor((opcode / 1000) % 10);
   const A = Math.floor((opcode / 10000) % 10);
 
+  console.log(A, B, C, DE, opcode);
+
   const num1 = C === 0 ? input[input[i + 1]] : input[i + 1];
   const num2 = B === 0 ? input[input[i + 2]] : input[i + 2];
   const position = A === 0 ? input[i + 3] : i + 3;
